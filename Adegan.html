@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adegan95 Global Enterprise — Restoring Nature for People</title>
+  <style>
+    :root{
+      --bg:#0f1724;--card:#0b1220;--accent:#57c27a;--muted:#94a3b8;--glass: rgba(255,255,255,0.03);
+      --maxw:1100px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#071026 0%, #08172a 60%);color:#e6eef6;line-height:1.5}
+    .container{max-width:var(--maxw);margin:28px auto;padding:24px}
+    header{display:flex;align-items:center;gap:18px}
+    .logo{width:68px;height:68px;border-radius:14px;background:linear-gradient(135deg,var(--accent),#8ae6b5);display:flex;align-items:center;justify-content:center;color:#042022;font-weight:800;font-size:20px;box-shadow:0 6px 18px rgba(7,21,12,0.45)}
+    h1{font-size:22px;margin:0}
+    .tag{color:var(--muted);font-size:13px}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;margin-top:22px;align-items:center}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:22px;border-radius:14px;box-shadow:0 6px 30px rgba(2,6,12,0.6);backdrop-filter: blur(6px)}
+    .intro h2{margin:0 0 12px 0;font-size:20px}
+    .intro p{color:var(--muted);margin:0}
+
+    .mission{font-size:15px;color:#eaf6ee;margin-top:14px}
+    .mission b{color:var(--accent)}
+
+    .image-card{height:360px;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,#0b1f14 0%, #12313b 100%)}
+    .image-card p{max-width:360px;text-align:center;color:var(--muted);padding:12px}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
+    .feature{padding:18px;border-radius:12px;background:var(--glass);border:1px solid rgba(255,255,255,0.03)}
+    .feature h3{margin:0 0 8px 0}
+    .muted{color:var(--muted);font-size:14px}
+
+    .projects{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
+    .project{flex:1 1 300px;padding:16px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));}
+
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px;padding:18px}
+
+    /* contact */
+    form{display:flex;flex-direction:column;gap:10px}
+    input, textarea, button{padding:12px;border-radius:10px;border:0;background:rgba(255,255,255,0.03);color:inherit}
+    textarea{min-height:120px;resize:vertical}
+    button{cursor:pointer;border:1px solid rgba(255,255,255,0.06);font-weight:600}
+
+    /* responsive */
+    @media (max-width:880px){.hero{grid-template-columns:1fr;}.grid{grid-template-columns:repeat(2,1fr)} }
+    @media (max-width:560px){.grid{grid-template-columns:1fr}.logo{width:56px;height:56px;font-size:18px}}
+
+    /* subtle floating icons */
+    .floating{position:fixed;right:20px;bottom:20px;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#8ae6b5,#57c27a);box-shadow:0 8px 30px rgba(7,21,12,0.45);cursor:pointer}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">A95</div>
+      <div>
+        <h1>Adegan95 Global Enterprise</h1>
+        <div class="tag">Restoring abundance — sustainable, edible, and safe for all 🌱🍓🌺</div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="card intro">
+        <h2>Our Mission — Return the world to abundant, edible nature</h2>
+        <p class="muted">Adegan95 Global Enterprise exists to transform cities, farms and communities into living systems that provide for people — naturally. We envision a world where streets, parks, farms and backyards are full of edible trees, non-toxic flowers, and animals that enrich human life without causing harm.</p>
+
+        <p class="mission">We are driven by a single bold aim: <b>to restore Earth to a state where nature freely provides for mankind</b>. That means:
+        <ul>
+          <li>Replacing ornamental trees with productive, edible-tree varieties (think fruit where shade once was) 🍎🍊</li>
+          <li>Designing and cultivating edible flowers and herbs that are safe, nutritious and beautiful 🌺🍃</li>
+          <li>Promoting animal stewardship that favors harmonious species — animals that help rather than harm</li>
+          <li>Working with communities to redesign public space so food, medicine and beauty are accessible to everyone</li>
+        </ul>
+        </p>
+
+        <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+          <button id="learnBtn">Learn about projects</button>
+          <button id="contactBtn">Contact us</button>
+        </div>
+
+        <div style="margin-top:14px;color:var(--muted);font-size:13px">Join our mission: plant, eat, share — help turn streets and farms into living pantry-systems.</div>
+      </div>
+
+      <aside class="card image-card">
+        <h3 style="margin:6px 0">Vision snapshot</h3>
+        <p>Imagine boulevards lined with strawberry trees, parks filled with edible flowers, and farms built to feed local communities first — this is the Adegan95 future.</p>
+        <div style="margin-top:8px;font-size:36px">🍓🌺🌳🐝</div>
+      </aside>
+    </section>
+
+    <section class="grid">
+      <div class="feature card">
+        <h3>Community Orchards</h3>
+        <div class="muted">We plant orchards in neighborhoods and train residents to maintain food trees that give for generations.</div>
+      </div>
+      <div class="feature card">
+        <h3>Edible Flowers & Herbs</h3>
+        <div class="muted">We research safe, delicious flower varieties and integrate them into urban landscaping.</div>
+      </div>
+      <div class="feature card">
+        <h3>Harmonious Fauna</h3>
+        <div class="muted">Promoting animal selection and stewardship that supports human well-being and biodiversity.</div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="project card">
+        <h4>Project: Street Pantry (Pilot)</h4>
+        <p class="muted">Convert select streets into edible corridors: shade + food + flowers. Pilots focus on low-maintenance, native fruit trees and pollinator-supporting plants.</p>
+      </div>
+      <div class="project card">
+        <h4>Project: Edible Schoolyards</h4>
+        <p class="muted">Turn school lawns into learning orchards where children harvest, prepare and learn where food comes from.</p>
+      </div>
+      <div class="project card">
+        <h4>Project: Seed & Knowledge Bank</h4>
+        <p class="muted">Open-source seed library and guides so communities can copy successful designs and scale quickly.</p>
+      </div>
+    </section>
+
+    <section style="margin-top:20px" class="card">
+      <h3>Get involved</h3>
+      <p class="muted">We welcome volunteers, partners, researchers and funders. Tell us how you'd like to help — tree planting, research, local coordination, or donations.</p>
+      <form id="contactForm">
+        <input id="name" placeholder="Your name" required />
+        <input id="email" placeholder="Your email" type="email" required />
+        <textarea id="message" placeholder="How would you like to help?" required></textarea>
+        <button type="submit">Send message</button>
+        <div id="formStatus" class="muted" style="margin-top:8px"></div>
+      </form>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Adegan95 Global Enterprise — Planting a freer, edible world. Built with care.
+    </footer>
+
+  </div>
+
+  <div class="floating" id="floatDonate" title="Quick support">💚</div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple interactive bits
+    document.getElementById('learnBtn').addEventListener('click', ()=>{
+      alert('Check the Projects section below — Street Pantry, Edible Schoolyards and Seed Bank. Scroll down to see how to get involved.');
+    });
+    document.getElementById('contactBtn').addEventListener('click', ()=>{
+      document.getElementById('name').scrollIntoView({behavior:'smooth',block:'center'});
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      if(!name||!email||!message){document.getElementById('formStatus').textContent='Please fill all fields.';return}
+      // Fake submit (no backend). Provide a downloadable JSON with the submission for the user.
+      const data = {name,email,message,submitted:new Date().toISOString()};
+      const blob = new Blob([JSON.stringify(data, null, 2)], {type:'application/json'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a'); a.href = url; a.download = 'adegan95_contact_'+(Date.now())+'.json'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+      document.getElementById('formStatus').textContent = 'Thank you! Your message was saved locally as a file and can be sent to our team.';
+      this.reset();
+    });
+
+    // Floating donate quick action
+    document.getElementById('floatDonate').addEventListener('click', ()=>{
+      const want = confirm('Would you like to receive our volunteer starter pack (PDF) via a download link? (This demo will create a sample file locally)');
+      if(!want) return;
+      const sample = {title:'Adegan95 Volunteer Starter Pack',steps:['Learn about edible trees','Join a planting day','Share seeds & knowledge'],notes:'This is a demo file.'};
+      const blob = new Blob([JSON.stringify(sample, null, 2)], {type:'application/json'});
+      const url = URL.createObjectURL(blob); const a = document.createElement('a'); a.href = url; a.download='adegan95_starterpack.json'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+    });
+
+    // small accessibility: focus styles
+    document.addEventListener('keydown', function(e){ if(e.key==='Tab') document.body.classList.add('show-focus'); });
+  </script>
+</body>
+</html>
